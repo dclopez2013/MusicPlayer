@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QMediaPlayer>
+#include <QVideoWidget>
 
 namespace Ui {
 class MainWindow;
@@ -44,6 +45,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QMediaPlayer *player;
+
 
 };
 

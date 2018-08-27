@@ -26,8 +26,9 @@ void MainWindow::on_startButton_clicked()
         ui->currentSongLabel->setText("No Song Selected To Play");
     }
     else{
-        player->setMedia(getSongUrl());
-         //player->setMedia(QUrl::fromLocalFile("c:/Users/dclop/Downloads/test.mp3"));
+       // player->setMedia(getSongUrl());
+       // player->setMedia(QUrl::fromLocalFile("c:/Users/dclop/Downloads/test.mp3"));
+        player->setMedia(QUrl::fromLocalFile("c:/Users/dclop/Downloads/test.mp3"));
         player->play();
         qDebug() << player->errorString();
     }
@@ -68,8 +69,9 @@ void MainWindow::on_positionChanged(quint64 position){
 }
 
 void MainWindow::setSong(QUrl song){
-    QUrl temp = song;
-    this->song = temp;
+   // QUrl temp = song;
+   // this->song = temp;
+    this->song = song;
 }
 
 QUrl MainWindow::getSongUrl(){
